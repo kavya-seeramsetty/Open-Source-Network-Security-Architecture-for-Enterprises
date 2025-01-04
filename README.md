@@ -22,6 +22,10 @@ This project involves building a robust, enterprise-grade network security infra
 - Configured **openSUSE** as the operating system for some of the network infrastructure, handling routing, firewalling, and VPN services.
 - Configured **Cumulus Linux** as a virtual Layer 3 switch and as the backbone for routing between multiple network segments.
 - Configured **OSPF (Open Shortest Path First)** for dynamic routing and **VLANs** to segment traffic and enforce security boundaries within the network.
+<p align="center"> <br/> <img src="https://imgur.com/OyVrkYT.png"/><br /> </p>
+<p align="center"> <br/> <img src="https://imgur.com/PxNS6aR.png"/><br /> </p>
+<p align="center"> <br/> <img src="https://imgur.com/BtXTJ8L.png"/><br /> </p>
+<p align="center"> <br/> <img src="https://imgur.com/aGAQNwS.png"/><br /> </p>
 
 ### 2. **Firewall Configuration**
 - Configured **nftables** on **openSUSE** hosts for advanced packet filtering and NAT:
@@ -31,6 +35,10 @@ This project involves building a robust, enterprise-grade network security infra
 - Deployed a **pfsense** firewall cluster to protect the perimeter network and ensure high availability:
   - Configured **stateful packet inspection** to track and allow only valid connection states.
   - Set up **VPN passthrough** for secure remote access and encrypted communication.
+<p align="center"> <br/> <img src="https://imgur.com/Ocs5Hxi.png"/><br /> </p>
+<p align="center"> <br/> <img src="https://imgur.com/O2rsNI4.png"/><br /> </p>
+<p align="center"> <br/> <img src="https://imgur.com/JedxlYx.png"/><br /> </p>
+<p align="center"> <br/> <img src="https://imgur.com/SMzPkvv.png"/><br /> </p>
 
 ### 3. **VPN Integration for Secure Remote Access**
 - Integrated **WireGuard** for creating encrypted tunnels for remote access:
@@ -40,6 +48,7 @@ This project involves building a robust, enterprise-grade network security infra
   - Configured **IPsec VPN tunnels** between remote users and the corporate network.
   - Used **X.509 certificates** for authentication, ensuring secure and authenticated connections for remote employees.
   - Applied **IKEv2** for key exchange to establish encrypted tunnels and secure data transmission.
+<p align="center"> <br/> <img src="https://imgur.com/EKQuLJ1.png"/><br /> </p>
 
 ### 4. **Network Access Control with PacketFence**
 - Implemented **PacketFence** as a NAC solution to enforce security policies across the network:
@@ -47,6 +56,7 @@ This project involves building a robust, enterprise-grade network security infra
   - Configured **VLAN assignments** based on device status (compliant, non-compliant, quarantined).
   - Implemented **2FA** (Two-Factor Authentication) for SSH access to management VLAN servers, using **Google Authenticator** for enhanced security during administrative sessions.
   - Leveraged **Guest Network Access** with customizable access policies to provide secure internet access to non-corporate devices.
+<p align="center"> <br/> <img src="https://imgur.com/AJxelTt.png"/><br /> </p>
 
 ### 5. **Penetration Testing and Vulnerability Resolution**
 - Simulated **penetration testing** attacks to evaluate the security posture of the network:
@@ -54,3 +64,5 @@ This project involves building a robust, enterprise-grade network security infra
   - Performed **network sniffing** using **tcpdump** to capture and analyze packets, checking for unencrypted traffic and weak authentication mechanisms.
   - Ran **brute-force attacks** against weakly configured VPNs and SSH services.
   - Identified security gaps such as unpatched software vulnerabilities, misconfigured firewalls, and weak passwords, and promptly resolved them by applying patches, reconfiguring firewall rules, and enforcing stronger authentication mechanisms.
+<p align="center"> <br/> <img src="https://imgur.com/ssLburJ.png"/><br /> </p>
+
